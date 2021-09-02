@@ -1,0 +1,21 @@
+
+type Comment {
+  id: ID!
+  userName: String!
+  text: String!
+  created: String!
+}
+
+input CommentInput {
+  userName: String
+  text: String!
+}
+
+type Query {
+  listComments: [Comment]
+}
+
+type Mutation {
+  addComment(comment: CommentInput!): Comment
+  deleteComment(commentId: String!): String
+}

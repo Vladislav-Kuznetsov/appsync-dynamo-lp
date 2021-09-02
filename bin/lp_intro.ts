@@ -4,7 +4,7 @@ import * as cdk from '@aws-cdk/core';
 import { LpIntroStack } from '../lib/lp_intro-stack';
 
 const app = new cdk.App();
-new LpIntroStack(app, 'LpIntroStack', {
+new LpIntroStack(app, 'VKuzLpIntroStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
